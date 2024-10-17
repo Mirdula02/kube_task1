@@ -1,0 +1,35 @@
+Log file created at: 2024/10/17 17:54:40
+Running on machine: ip-172-31-31-20
+Binary: Built with gc go1.22.5 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1017 17:54:40.161125   29528 out.go:345] Setting OutFile to fd 1 ...
+I1017 17:54:40.161196   29528 out.go:392] TERM=xterm,COLORTERM=, which probably does not support color
+I1017 17:54:40.161200   29528 out.go:358] Setting ErrFile to fd 2...
+I1017 17:54:40.161204   29528 out.go:392] TERM=xterm,COLORTERM=, which probably does not support color
+I1017 17:54:40.161382   29528 root.go:338] Updating PATH: /home/ec2-user/.minikube/bin
+W1017 17:54:40.161484   29528 root.go:314] Error reading config file at /home/ec2-user/.minikube/config/config.json: open /home/ec2-user/.minikube/config/config.json: no such file or directory
+I1017 17:54:40.161683   29528 out.go:352] Setting JSON to false
+I1017 17:54:40.162266   29528 start.go:129] hostinfo: {"hostname":"ip-172-31-31-20.us-west-2.compute.internal","uptime":3377,"bootTime":1729184303,"procs":102,"os":"linux","platform":"amazon","platformFamily":"rhel","platformVersion":"2023.6.20241010","kernelVersion":"6.1.112-122.189.amzn2023.x86_64","kernelArch":"x86_64","virtualizationSystem":"xen","virtualizationRole":"guest","hostId":"ec2c00f8-8e5f-0db0-495c-fd68cfc85a3f"}
+I1017 17:54:40.162318   29528 start.go:139] virtualization: xen guest
+I1017 17:54:40.164947   29528 out.go:177] * minikube v1.34.0 on Amazon 2023.6.20241010 (xen/amd64)
+W1017 17:54:40.167752   29528 out.go:270] ! minikube skips various validations when --force is supplied; this may lead to unexpected behavior
+I1017 17:54:40.167956   29528 driver.go:394] Setting default libvirt URI to qemu:///system
+W1017 17:54:40.171777   29528 preload.go:293] Failed to list preload files: open /home/ec2-user/.minikube/cache/preloaded-tarball: no such file or directory
+I1017 17:54:40.171798   29528 notify.go:220] Checking for updates...
+W1017 17:54:40.185911   29528 docker.go:181] docker version returned error: exit status 1
+I1017 17:54:40.188500   29528 out.go:177] * Using the docker driver based on user configuration
+I1017 17:54:40.190816   29528 start.go:297] selected driver: docker
+I1017 17:54:40.190822   29528 start.go:901] validating driver "docker" against <nil>
+I1017 17:54:40.190832   29528 start.go:912] status for docker: {Installed:true Healthy:false Running:true NeedsImprovement:false Error:"docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}" exit status 1: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.44/version": dial unix /var/run/docker.sock: connect: permission denied Reason:PROVIDER_DOCKER_NEWGRP Fix:Add your user to the 'docker' group: 'sudo usermod -aG docker $USER && newgrp docker' Doc:https://docs.docker.com/engine/install/linux-postinstall/ Version:}
+I1017 17:54:40.193233   29528 out.go:201] 
+W1017 17:54:40.195818   29528 out.go:270] X "docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}" exit status 1: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.44/version": dial unix /var/run/docker.sock: connect: permission denied
+W1017 17:54:40.195935   29528 out.go:270] * Suggestion: Add your user to the 'docker' group: 'sudo usermod -aG docker $USER && newgrp docker'
+W1017 17:54:40.195998   29528 out.go:270] * Documentation: https://docs.docker.com/engine/install/linux-postinstall/
+I1017 17:54:40.198078   29528 out.go:201] 
+I1017 17:54:40.199987   29528 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+W1017 17:54:40.249078   29528 info.go:262] unmarshal docker info: parsing time "" as "2006-01-02T15:04:05Z07:00": cannot parse "" as "2006"
+I1017 17:54:40.249131   29528 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+W1017 17:54:40.285281   29528 info.go:262] unmarshal docker info: parsing time "" as "2006-01-02T15:04:05Z07:00": cannot parse "" as "2006"
+I1017 17:54:40.287739   29528 out.go:201] 
+W1017 17:54:40.290406   29528 out.go:270] X Exiting due to MK_USAGE: Ensure your Docker is running and is healthy.
+I1017 17:54:40.292554   29528 out.go:201] 
